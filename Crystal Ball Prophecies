@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магический Шар Предсказаний</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>САЙТ ПРЕДСКАЗАНИЙ</h1>
+    </header>
+    <div class="center">
+        <h2>Спроси у шара предсказаний</h2>
+        <input type="text" id="question" placeholder="Введите ваш вопрос">
+        <div class="magic-8-ball">
+            <div class="circle">
+                <div class="answer">
+                    <p id="answer">Ответ</p>
+                </div>
+            </div>
+        </div>
+        <button onclick="getPrediction()">Получить предсказание</button>
+        <br>
+        <h2>История</h2>
+        <ul id="history-list"></ul>
+        <button onclick="clearHistory()">Очистить историю</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
